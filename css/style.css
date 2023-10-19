@@ -33,7 +33,7 @@ ul {
  }
 
 .container {
-    max-width: 1158px;
+    max-width: 1440px; /* 1158 px or 1440px */
     margin: 0 auto;
 }
 .section {
@@ -56,7 +56,7 @@ h2 {
 }
 
 .top-line-bg {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     border-bottom: 1px solid var(--CORNFLOWER);
     background: var(--WHITE);
@@ -66,7 +66,7 @@ h2 {
     margin-right: 76px;
     margin-top: 24px;
     margin-bottom: 24px;
-    /* margin-left: 156px; should be*/
+    margin-left: 156px;/*  should be*/
 }
 
 .web-logo {
@@ -272,6 +272,12 @@ h1 {
 /* -------------------------------------------------------------------------------------- */
 /* Start of Section 1 */
 /* <!--Icons for Advantages--> */
+.advantages,
+.features-section,
+.section-2-list,
+.clients-list {
+    display: flex;
+}
 .icon-list {
     margin-top: 120px;
    list-style: none;
@@ -522,9 +528,9 @@ h1 {
     display: flex;
     flex-direction: row;
 } 
-/* .logo-footer {
-     margin-left: 156px;
-}*/
+.logo-footer {
+     padding-left: 156px;
+}
 .studio-logo-foot {
     color: var(--CLOUD);
     font-family: Raleway;
@@ -641,6 +647,7 @@ h1 {
 
 .subscribe-button {
     display: flex;
+    /* padding-right: 159px; */
     justify-content: center;
     align-content: center;
     gap: 16px;
@@ -752,7 +759,7 @@ h1 {
 .row-left {
     padding-top: 72px;
     padding-bottom: 1056px;
-    justify-content: left;
+   padding-left: 105px;
     display: flex;
     flex-shrink: 0;
     gap: 24px;
